@@ -15,3 +15,6 @@ scgi_param  REMOTE_ADDR        $remote_addr;
 scgi_param  REMOTE_PORT        $remote_port;
 scgi_param  SERVER_PORT        $server_port;
 scgi_param  SERVER_NAME        $server_name;
+
+# httpoxy mitigation (https://httpoxy.org/ https://www.nginx.com/blog/?p=41962)
+scgi_param  HTTP_PROXY         "";
